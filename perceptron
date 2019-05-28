@@ -7,7 +7,7 @@ def acti_fun(x):
 
 
 # 创建感知器类
-class Perception(object):
+class Perceptron(object):
     # 初始化权重
     def __init__(self):
         self.weights = np.random.random()
@@ -49,7 +49,7 @@ if __name__ == '__main__':
     inputdata_5 = np.random.normal(5.0, 0.0, (2, 2))
     inputdata_1 = np.mat(inputdata_1)
     inputdata_5 = np.mat(inputdata_5)
-    p = Perception()
+    p = Perceptron()
     p.train(input_vecs, labels, 20, 0.1)
     predict = p.predict(inputdata_1)
 
